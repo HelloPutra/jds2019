@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport">
+	<meta name="robots" content="all,follow">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.3/dist/semantic.min.css">
+	<title>Halaman Pendaftaran &mdash; Aplikasi XYZ</title>
+</head>
+<body style="background-color: #eeeeee;">
+	<div class="ui grid">
+		<div class="computer only row">
+			<div class="ui top fixed menu" style="background-color: #0277bd; font-size: 15px;">
+				<div class="item" style=" color: #FFF;">
+					<h4>APLIKASI XYZ</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ui grid" style="margin-top: 5%">
+		<div class="row">
+			<div class="twelve wide computer sixteen wide phone centered column">
+				<h3><i class="wpforms icon"></i> FORMULIR PENDAFTARAN</h3>
+				<div class="ui divider"></div>
+				<div class="ui grid">
+					<div class="sixteen wide computer sixteen wide phone centered column">
+						<form action="functions/function_pengguna.php" method="POST">
+			                <div class="ui stacked segment">
+			                    <div class="ui form">
+			                    	<a class="ui blue ribbon label">1. DATA DIRI</a><br><br>
+			                    	<div class="field">
+		                                <label>NAMA LENGKAP</label>
+		                                <input type="text" name="nama" placeholder="Contoh : Ajat Sudrajat">
+		                            </div>
+		                            <div class="field">
+		                                <label>TANGGAL LAHIR</label>
+		                                <div class="three fields">
+				                            <div class="field">
+				                                <input type="number" name="tanggal" placeholder="Tanggal (Contoh : 1)">
+				                            </div>
+				                            <div class="field">
+					                            <select name="bulan" id="" class="ui dropdown">
+					                            	<option selected="selected" value="0">PILIH BULAN</option>
+					                            	<option value="1">JANUARI</option>
+					                            	<option value="2">FEBRUARI</option>
+					                            	<option value="3">MARET</option>
+					                            	<option value="4">APRIL</option>
+					                            	<option value="5">MEI</option>
+					                            	<option value="6">JUNI</option>
+					                            	<option value="7">JULI</option>
+					                            	<option value="8">AGUSTUS</option>
+					                            	<option value="9">SEPTEMBER</option>
+					                            	<option value="10">OKTOBER</option>
+					                            	<option value="11">NOVEMBER</option>
+					                            	<option value="12">DESEMBER</option>
+					                            </select>
+				                            </div>
+				                            <div class="field">
+				                                <input type="number" name="tahun" placeholder="Tahun (Contoh : 1980)">
+				                            </div>
+				                        </div>
+		                            </div>
+			                        <div class="field">
+			                        	<label>JENIS KELAMIN</label>
+			                        	<div class="inline fields">
+										    <div class="field">
+										      <div class="ui radio checkbox">
+										        <input type="radio" name="example2">
+										        <label>LAKI - LAKI</label>
+										      </div>
+										    </div>
+										    <div class="field">
+										      <div class="ui radio checkbox">
+										        <input type="radio" name="example2">
+										        <label>PEREMPUAN</label>
+										      </div>
+										    </div>
+				                        </div> 
+			                        </div>
+			                        <div class="field">
+										<label>ALAMAT</label>
+										<textarea rows="2" placeholder="Contoh : Jalan Surapati No. 1 Kota Bandung"></textarea>
+									</div>
+									<a class="ui blue ribbon label">2. RIWAYAT PEKERJAAN</a><br><br>
+									<div class="field">
+		                                <label>RIWAYAT 1</label>
+		                                <div class="two fields">
+			                                <div class="field">
+			                                	<label>TEMPAT BEKERJA</label>
+			                                	<input type="text" name="tempat" placeholder="Contoh : Kantor ABC">
+			                                </div>
+			                                <div class="field">
+			                                	<label>JABATAN</label>
+			                                	<input type="text" name="jabatan" placeholder="Contoh : Staff IT">
+			                                </div>
+			                            </div>
+			                            <div class="two fields">
+			                                <div class="field">
+			                                	<label>DARI</label>
+			                                	<input type="number" name="#" placeholder="Contoh : 2015">
+			                                </div>
+			                                <div class="field">
+			                                	<label>SAMPAI</label>
+			                                	<input type="number" name="#" placeholder="Contoh : 2017">
+			                                </div>
+			                            </div>
+		                            </div>
+		                            <div class="ui divider"></div>
+		                            <div class="field">
+		                                <label>RIWAYAT 2</label>
+		                                <div class="two fields">
+			                                <div class="field">
+			                                	<label>TEMPAT BEKERJA</label>
+			                                	<input type="text" name="tempat" placeholder="Contoh : Kantor XYZ">
+			                                </div>
+			                                <div class="field">
+			                                	<label>JABATAN</label>
+			                                	<input type="text" name="jabatan" placeholder="Contoh : Programmer">
+			                                </div>
+			                            </div>
+			                            <div class="two fields">
+			                                <div class="field">
+			                                	<label>DARI</label>
+			                                	<input type="number" name="#" placeholder="Contoh : 2017">
+			                                </div>
+			                                <div class="field">
+			                                	<label>SAMPAI</label>
+			                                	<input type="number" name="#" placeholder="Contoh : 2019">
+			                                </div>
+			                            </div>
+		                            </div>
+			                    </div>
+			                    <br><br>
+			                    <button class="ui blue button">
+			                        <i class="send icon"></i>
+			                        DAFTAR
+			                    </button>
+			                    <a class="ui button" href="">
+			                        <i class="cancel icon"></i>
+			                        BATAL
+			                    </a>
+			                </div>
+			            </form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br><br><br><br>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.3/dist/semantic.min.js"></script>
+</html>
